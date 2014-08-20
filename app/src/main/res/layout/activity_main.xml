@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flappysam.MainActivity">
+    <ImageView
+        android:scaleType="matrix"
+        android:id="@+id/movingbg"
+        android:layout_height="1dp"
+        android:src="@drawable/movingpgg"
+        android:layout_width="1dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:text="Score: 0"
+        android:background="@drawable/borderradius"
+        android:textSize="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/flappySam"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:visibility="gone"
+        android:layout_marginLeft="50px"
+        android:src="@drawable/sam"/>
+    <RelativeLayout
+        android:id="@+id/menuContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <RelativeLayout
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:rotation="5"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/logobg"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/logotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="30dp"
+                android:textColor="#000"
+                android:textStyle="italic|bold"
+                android:text="Flappy Sam"/>
+            <ImageView
+                android:id="@+id/bouncingSamlogo"
+                android:layout_toRightOf="@+id/logotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/sam"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:background="@drawable/bgmain">
+            <TextView
+                android:layout_gravity="center_vertical"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rules"
+                android:textSize="20dp"/>
+
+
+
+                <Button android:id="@+id/buttonStart"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

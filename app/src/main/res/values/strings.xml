@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Flappy Sam</string>
+    <string name="action_settings">Settings</string>
+    <string name="rules">The rules are same as when you\'re playing Flappy Bird. But instead of a bird you have to keep Sam away from the pillars.
+        </string>
+    <string name="directions">How does the game works?\n
+        - The kiwi is controlled by tilting the phone in all kinds of directions\n
+        - You can choose difficulty below\n
+        Enjoy! =)</string>
+
+</resources>
